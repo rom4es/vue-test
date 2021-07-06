@@ -98,7 +98,7 @@ export default {
       margin-left: auto;
     }
   .data-table__content{
-    margin: 20px 0;
+    margin: 1rem 0;
   }
     .data-table__grid{
       display: grid;
@@ -108,8 +108,11 @@ export default {
       }
         .data-table__item{
           text-align: center;
-          padding: 10px;
+          padding: 1rem;
           border: 1px solid #000;
+        }
+        .data-table__header .data-table__item{
+          padding: .5rem;
         }
           .data-table__item p{
             display: none;
@@ -124,14 +127,14 @@ export default {
       .data-table__row{
         display: block;
         border: 1px solid #000;
-        padding: 15px;
-        margin-bottom: 15px;
+        padding: 1.5rem;
+        margin-bottom: 1.5rem;
       }
         .data-table__item{
           text-align: left;
           padding: 0;
           border: none;
-          margin-bottom: 15px;
+          margin-bottom: 1.5rem;
         }
         .data-table__item:last-child{
           margin-bottom: 0;

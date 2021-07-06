@@ -10,7 +10,7 @@
           <p>You can clear cache and load data again.</p>
         </template>
         <template #footer>
-          <ui-button type="primary">
+          <ui-button type="primary" :caching="true">
             Clear cache
           </ui-button>
         </template>

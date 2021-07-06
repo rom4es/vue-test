@@ -1,4 +1,5 @@
 import axios from 'axios';
+import mocks from '@/mocks/getPayments';
 
 /**
  * @var {Axios}
@@ -13,7 +14,7 @@ const instance = axios.create({
  * @param {Object} params
  * @returns {Promise}
  */
-const getPayments = (params = {}) => instance.request({
+const getPayments = (process.env.NODE_ENV === 'development') ? mocks : (params = {}) => instance.request({
   method: 'get',
   url: '/api/v1/payments',
   params,
