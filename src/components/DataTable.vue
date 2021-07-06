@@ -5,7 +5,7 @@
     </div>
 
     <div class="data-table__content">
-      <div class="data-table__header data-table__grid" :style="{gridTemplateColumns: getGrid}">
+      <div class="data-table__grid data-table__grid_header" :style="{gridTemplateColumns: getGrid}">
         <div class="data-table__row">
           <div
             class="data-table__item"
@@ -89,58 +89,3 @@ export default {
   },
 };
 </script>
-
-<style>
-  .data-table__filter{
-    display: flex;
-  }
-    .data-table__filter .ui-money{
-      margin-left: auto;
-    }
-  .data-table__content{
-    margin: 1rem 0;
-  }
-    .data-table__grid{
-      display: grid;
-    }
-      .data-table__row{
-        display: contents;
-      }
-        .data-table__item{
-          text-align: center;
-          padding: 1rem;
-          border: 1px solid #000;
-        }
-        .data-table__header .data-table__item{
-          padding: .5rem;
-        }
-          .data-table__item p{
-            display: none;
-          }
-  @media screen and (max-width: 768px){
-    .data-table__grid{
-      display: block;
-    }
-    .data-table__grid.data-table__header{
-      display: none;
-    }
-      .data-table__row{
-        display: block;
-        border: 1px solid #000;
-        padding: 1.5rem;
-        margin-bottom: 1.5rem;
-      }
-        .data-table__item{
-          text-align: left;
-          padding: 0;
-          border: none;
-          margin-bottom: 1.5rem;
-        }
-        .data-table__item:last-child{
-          margin-bottom: 0;
-        }
-          .data-table__item p{
-            display: block;
-          }
-  }
-</style>
