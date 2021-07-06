@@ -10,7 +10,7 @@
           <p>You can clear cache and load data again.</p>
         </template>
         <template #footer>
-          <ui-button type="primary" :caching="true">
+          <ui-button type="primary" @click="clearCache">
             Clear cache
           </ui-button>
         </template>
@@ -72,6 +72,9 @@ export default {
     ...mapActions([
       'load',
     ]),
+    clearCache() {
+      this.load({ clearCache: true });
+    },
   },
 };
 </script>
