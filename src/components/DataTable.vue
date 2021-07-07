@@ -19,10 +19,10 @@
           class="data-table__row"
           v-for="row in getList"
           :key="row.id">
-          <div class="data-table__item"><p>ID</p>{{row.id}}</div>
-          <div class="data-table__item"><p>Date</p>{{formattedDate(row.date)}}</div>
-          <div class="data-table__item"><p>Name</p>{{row.name}}</div>
-          <div class="data-table__item"><p>Money</p>{{formattedNumber(row.money)}}</div>
+          <div class="data-table__item"><div class="data-table__label">ID</div>{{row.id}}</div>
+          <div class="data-table__item"><div class="data-table__label">Date</div>{{formattedDate(row.date)}}</div>
+          <div class="data-table__item"><div class="data-table__label">Name</div>{{row.name}}</div>
+          <div class="data-table__item"><div class="data-table__label">Money</div>{{formattedNumber(row.money)}}</div>
         </div>
       </div>
     </div>

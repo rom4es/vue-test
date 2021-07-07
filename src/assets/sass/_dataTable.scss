@@ -27,10 +27,9 @@
     text-align: center;
     padding: 1rem;
     border: 1px solid #000;
-
-    & p{
-      display: none;
-    }
+  }
+  &__label{
+    display: none;
   }
 }
 
@@ -60,9 +59,10 @@
       &:last-child {
         margin-bottom: 0;
       }
-      & p{
-        display: block;
-      }
+    }
+
+    &__label{
+      display: block;
     }
   }
 }
